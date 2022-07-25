@@ -47,38 +47,46 @@ while Confirmação == 1:
 
     elif(Menu == 2):
         Menu = ""
+        Confirmação2 = 1
         print("")
+        print("Bem-Vindo ao Mostrador de Números, digite suas notas com um '.' no lugar de uma ','!")
 
-        num1 = int(input("Digite um Número: "))
+        ## Laço de repetição da operação;
+        while Confirmação2 == 1:
+            print("")
+            num1 = int(input("Digite um Número: "))
 
-        ## Respostas;
-        print("O número digitado foi:",num1,"!")
-        num1 = ""
+            ## Respostas;
+            print("")
+            print("O número digitado foi:",num1,"!")
+
+            print("")
+            Confirmação2 = (int(input("Deseja fazer a operação novamente ? (Sim = 1 / Não = 2)")))
+        print("")
         Confirmação = int(input("Deseja Voltar ao menu de exercicios ?(Sim = 1 / Não = 2)"))
 
     elif(Menu == 3):
         Menu = ""
         Confirmação2 = 1
         print("")
-        print("Bem-Vindo ao somador de números!")
+        print("Bem-Vindo ao somador de números, digite suas notas com um '.' no lugar de uma ','!")
 
         ##Laço para repetir a operação;
         while Confirmação2 == 1:
-            Confirmação2 = ""
+            print("")
             num1 = int(input("Digite um Número: "))
             num2 = int(input("Digite outro Número: "))
+
+            ## Operação;
             soma = num1 + num2
 
             ## Respostas;
+            print("")
             print("A soma dos números digitados é:",soma)
-
-            ## Zerando as variaveis;
-            num1 = ""
-            num2 = ""
-            soma = ""
 
             print("")
             Confirmação2 = (int(input("Deseja fazer a operação novamente ? (Sim = 1 / Não = 2)")))
+        print("")    
         Confirmação = int(input("Deseja Voltar ao menu de exercicios ?(Sim = 1 / Não = 2)"))    
 
     elif(Menu == 4):
@@ -89,24 +97,22 @@ while Confirmação == 1:
 
         ##Laço para repetir a operação;
         while Confirmação2 == 1:
+            print("")
             num1 = float(input("Digite sua primeira nota: "))
             num2 = float(input("Digite sua segunda nota: "))
             num3 = float(input("Digite sua terceira nota: "))
             num4 = float(input("Digite sua quarta nota: "))
+
+            ## Operação;
             media = ((num1+num2+num3+num4)/4)
 
             ## Respostas;
+            print("")
             print("Baseado nas notas inseridas, a sua média bimestral é:",media)
-
-            ## Zerando as variaveis;
-            num1 = ""
-            num2 = ""
-            num3 = ""
-            num4 = ""
-            media = ""
 
             print("")
             Confirmação2 = (int(input("Deseja criar a média bimestral novamente ? (Sim = 1 / Não = 2)")))
+        print("")    
         Confirmação = int(input("Deseja Voltar ao menu de exercicios ?(Sim = 1 / Não = 2)"))    
 
     elif(Menu == 5):
@@ -122,29 +128,28 @@ while Confirmação == 1:
             ## Escolha 1 (Metros para Centimetros);
             if(decisão == 1):
                 num1 = float(input("Digite o valor em Metros: "))
+
+                ## Operação;
                 conversão = num1*100
 
                 ## Respostas;
+                print("")
                 print(num1,"metros é equivalente a ",conversão,"centimetros!")
-
-                ## Zerando as variaveis
-                num1 = ""
-                conversão = ""
-                decisão = ""
 
             ## Escolha 2 (Centimetros para Metros);
             elif(decisão == 2):
                 num1 = float(input("Digite o valor em Centimetros: "))
-                conversão = num1/100
-                print(num1,"centimetros é equivalente a ",conversão,"metros!")
 
-                ## Zerando as variaveis
-                num1 = ""
-                conversão = ""
-                decisão = ""
+                ## Operação; 
+                conversão = num1/100
+
+                ## Respostas;
+                print("")
+                print(num1,"centimetros é equivalente a ",conversão,"metros!")
             
             ## Comando de Erro;
             else:
+                print("")
                 print("o Comando digitado é invalido, favor inserir um valo valido!")
             
             print("")
@@ -160,17 +165,19 @@ while Confirmação == 1:
 
         ## Laço de repetição da operação;
         while Confirmação2 == 1:
+            print("")
             num1 = float(input("Digite o valor raio do circulo: "))
-            conversão = (3.14*(num1**2))
+
+            ## Operação;
+            conversão = round((3.14*(num1**2)), 2)
 
             ## Respostas;
+            print("")
             print("A área de um circulo com um raio de",num1,"é igual a:",conversão)
 
-            ## Zerando as variaveis;
-            num1 = ""
-            conversão = ""
-
+            print("")
             Confirmação2 = (int(input("Deseja converter novamente ? (Sim = 1 / Não = 2)")))
+        print("")    
         Confirmação = int(input("Deseja Voltar ao menu de exercicios ?(Sim = 1 / Não = 2)"))    
 
     elif(Menu == 7):
@@ -181,17 +188,16 @@ while Confirmação == 1:
 
         ## Laço de repetição da operação;
         while Confirmação2 == 1:
+            print("")
             num1 = float(input("Digite o valor dos lados do quadrado: "))
+
+            ## Operação;
             conversão = num1**2
             
             ## Respostas;
             print("")
             print("A área de um quadrado com lados =",num1,"é igual a:",conversão)
             print("o dobro dsesta área é",conversão*2)
-
-            ## Zerando as variaveis;
-            num1 = ""
-            conversão = ""
             
             print("")
             Confirmação2 = (int(input("Deseja converter novamente ? (Sim = 1 / Não = 2)")))
@@ -206,18 +212,16 @@ while Confirmação == 1:
         
         ## Laço de repetição da Operação;
         while Confirmação2 == 1:
+            print("")
             num1 = float(input("Digite o valor do seu salário por hora: "))
             num2 = float(input("Agora Digite a quantidade de Horas trabalhadas no mês: "))
+
+            ## Operação;
             conversão = num1*num2   
 
             ## Respostas;
             print("")
             print("O Valor do seu sálario do mês é:",conversão,"!!")
-
-            ## Zerando as variaveis;
-            num1 = ""
-            num2 = ""
-            conversão = ""
 
             print("")
             Confirmação2 = (int(input("Deseja Conferir seu Salário novamente ? (Sim = 1 / Não = 2)")))
@@ -237,32 +241,27 @@ while Confirmação == 1:
             ## Escolha 1 (Celsius para Fahrenheit);
             if(decisão == 1):
                 num1 = float(input("Digite o valor em Fahrenheit: "))
-                conversão = ((num1 - 32)*5/9)
+
+                ## Operação;
+                conversão = round(((num1 - 32)*5/9), 2)
 
                 ## Respostas;
                 print(num1,"ºF é equivalente a ",conversão,"ºC!")
 
-                ## Zerando as variaveis
-                num1 = ""
-                conversão = ""
-                decisão = ""
             
             ## Escolha 2 (Fahrenheit para Celsius);
             elif(decisão == 2):
                 num1 = float(input("Digite o valor em Celsius: "))
-                conversão = ((num1 * 9/5)+ 32)
+
+                ## Operação;
+                conversão = round(((num1 * 9/5)+ 32), 2)
 
                 ## Respostas;
                 print(num1,"ºC é equivalente a ",conversão,"ºF!")
-
-                ## Zerando as variaveis
-                num1 = ""
-                conversão = ""
-                decisão = ""
             
             ## Comando de Erro;
             else:
-                print("o Comando digitado é invalido, favor inserir um valo valido!")
+                print("o Comando digitado é invalido, favor inserir um valor valido!")
             
             print("")
             Confirmação2 = (int(input("Deseja converter novamente ? (Sim = 1 / Não = 2)")))
@@ -280,9 +279,9 @@ while Confirmação == 1:
             num1 = int(input("Digite um número pertencente a classe 'Inteiro': "))
             num2 = int(input("Digite outro número pertencente a classe 'Inteiro': "))
             num3 = float(input("Agora digite um número pertencente a classe 'Real': "))
-            operação1 = ((num1*2)*(num2/2))
-            operação2 = ((num1*3)+num3)
-            operação3 = num3**3
+            operação1 = round(((num1*2)*(num2/2)), 2)
+            operação2 = round(((num1*3)+num3),2 )
+            operação3 = round((num3**3), 2)
 
             ## Respostas;
             print("")
@@ -308,7 +307,7 @@ while Confirmação == 1:
             ## Escolha 1 (Metros para Centimetros);
             if(decisão == 1):
                 num1 = float(input("Qual sua altura? "))
-                conversão = ((72.7*num1)-58)
+                conversão = round(((72.7*num1)-58), 3)
 
                 ## Respostas;
                 print("O peso ideal para um Homem com uma altura de",num1,"é igual a:",conversão)
@@ -321,7 +320,7 @@ while Confirmação == 1:
             ## Escolha 2 (Centimetros para Metros);
             elif(decisão == 2):
                 num1 = float(input("Qual sua altura? "))
-                conversão = ((62.1*num1)-44.7)
+                conversão = round(((62.1*num1)-44.7), 3)
 
                 ## Respostas;
                 print("O peso ideal para uma Mulher com uma altura de",num1,"é igual a:",conversão)
@@ -352,9 +351,11 @@ while Confirmação == 1:
             
             ## Operação da Multa;
             if(peso > 50):
-                excesso = peso-50
-                multa = excesso*4.0
-                print("Seu Peixe passou",excesso,"Kg do peso máximo permitido no local, e você receberá uma multa de",multa)
+                excesso = round((peso-50), 2)
+                multa = round((excesso*4.0), 2)
+
+            ## Respostas;
+                print("Seu Peixe passou",excesso,"Kg do peso máximo permitido no local, e você receberá uma multa de R$",multa)
 
             else:
                 print("Seu peixe não passou do peso máximo permitido no local!")    
@@ -391,7 +392,7 @@ while Confirmação == 1:
             print("Seu salário liquido é: R$",(salário-ir-inss-sindicato))
 
             print("")
-            Confirmação2 = (int(input("Deseja conferir outro peixe? (Sim = 1 / Não = 2)")))
+            Confirmação2 = (int(input("Deseja conferir outro valor de salário? (Sim = 1 / Não = 2)")))
         print("") 
         Confirmação = int(input("Deseja Voltar ao menu de exercicios ?(Sim = 1 / Não = 2)"))  
 
@@ -404,6 +405,8 @@ while Confirmação == 1:
         while Confirmação2 == 1:
             print("")
             metros = (float(input("Digite o valor (em metros quadrados) da área a ser pintada: ")))
+
+            # Operações;
             litros = (math.ceil(metros / 3 )) ## Método de Arredondamento da Biblioteca
             latasTinta =(math.ceil(litros / 18)) ## Método de Arredondamento da Biblioteca
             custo = (float(latasTinta * 80))
@@ -415,7 +418,7 @@ while Confirmação == 1:
 
 
             print("")
-            Confirmação2 = (int(input("Deseja conferir outro peixe? (Sim = 1 / Não = 2)")))
+            Confirmação2 = (int(input("Deseja descobrir a quantidade de tinta novamente? (Sim = 1 / Não = 2)")))
         print("") 
         Confirmação = int(input("Deseja Voltar ao menu de exercicios ?(Sim = 1 / Não = 2)"))  
 
@@ -423,20 +426,36 @@ while Confirmação == 1:
         Menu = ""
         Confirmação2 = 1
         print("")
-        print("Bem-Vindo ao Ataque do Leão, digite os valores com um '.' no lugar de uma ','!")
+        print("Bem-Vindo a Hora da Pintada 2, digite os valores com um '.' no lugar de uma ','!")
 
         while Confirmação2 == 1:
             print("")
             metros = (float(input("Digite o valor (em metros quadrados) da área a ser pintada: ")))
-            litros = (math.ceil(metros / 6 )) ## Método de Arredondamento da Biblioteca
+
+            ## Operações;
+            litros = (math.ceil((metros / 6) *1.1)) ## Método de Arredondamento da Biblioteca e *1.1 é igual a um acressimo de 10%
             latasTinta =(math.ceil(litros / 18)) ## Método de Arredondamento da Biblioteca
-            galaoTinta = (math.ceil(litros / 3.6))
-            custoLata = (latasTinta * 80)
-            custoGalao = (galaoTinta * 25)
+            galaoTinta = (math.ceil(litros / 3.6)) ## Método de Arredondamento da Biblioteca
+            custoLata = (float(latasTinta * 80)) 
+            custoGalao = (float(galaoTinta * 25))
+
+            ## Mesclagem;
+            sobraTinta = (math.ceil(litros % 18))
+            latasTintaMisto = (int(litros // 18))
+            galaoTintaMisto = (math.ceil(sobraTinta / 3.6 ))
+            custoMisto = (float((latasTintaMisto*80) + (galaoTintaMisto * 25))
+)
+            ##Respostas;
+            print("")
+            print("Será nescessário utilizar",litros,"Litros de tinta para pintar",metros,"m².")
+            print("")
+            print("Você pode optar entre levar",latasTinta,"latas de tinta, e isso vai lhe custar R$",custoLata,", ")
+            print("ou levar",galaoTinta,"galões de tinta, que vão custar R$",custoGalao,",")
+            print("ou se preferir pode mesclar entre",latasTintaMisto,"latas e",galaoTintaMisto,"galões, que iram sair por apenas R$",custoMisto)
 
             
             print("")
-            Confirmação2 = (int(input("Deseja conferir outro peixe? (Sim = 1 / Não = 2)")))
+            Confirmação2 = (int(input("Deseja descobrir a quantidade de tinta novamente? (Sim = 1 / Não = 2)")))
         print("") 
         Confirmação = int(input("Deseja Voltar ao menu de exercicios ?(Sim = 1 / Não = 2)"))  
 
@@ -444,13 +463,25 @@ while Confirmação == 1:
         Menu = ""
         Confirmação2 = 1
         print("")
-        print("Bem-Vindo ao Ataque do Leão, digite os valores com um '.' no lugar de uma ','!")
+        print("Bem-Vindo ao Analisador de Download, digite os valores com um '.' no lugar de uma ','!")
 
         while Confirmação2 == 1:
             print("")
+            num1 = (float(input("Digite o tamanho do arquivo (em Mb) que deseja baixar: ")))
+            num2 = (float(input("Agora digite a velocidade (em Mbps) da sua internet: ")))
+
+            ## Operações;
+            # mbpm = (float(num2 / 60.0))
+            # tempoBaixar = ((mbpm / num1))
+            velocidade = (num1 / num2)
+            tempo = (round((velocidade / 60.0), 2))
+
+            ## Respostas;
+            print("")
+            print("O tempo aproximado para baixar o arquivo será",tempo,"minutos.")
 
             print("")
-            Confirmação2 = (int(input("Deseja conferir outro peixe? (Sim = 1 / Não = 2)")))
+            Confirmação2 = (int(input("Deseja conferir o tempo de download de outro arquivo? (Sim = 1 / Não = 2)")))
         print("") 
         Confirmação = int(input("Deseja Voltar ao menu de exercicios ?(Sim = 1 / Não = 2)"))    
 
